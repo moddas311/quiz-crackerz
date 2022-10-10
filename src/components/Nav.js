@@ -11,8 +11,8 @@ const Nav = () => {
           <div className='relative flex items-center justify-between'>
             <Link
               to='/'
-              aria-label='proReader'
-              title='proReader'
+              aria-label='iT_Quiz'
+              title='iT_Quiz'
               className='inline-flex items-center'
             >
               <svg
@@ -31,50 +31,51 @@ const Nav = () => {
                 <rect x='14' y='11' width='7' height='12' />
               </svg>
               <span className='ml-2 text-xl font-bold tracking-wide text-gray-800'>
-                proReader
+                iT_Quiz
               </span>
             </Link>
             <ul className='flex items-center hidden space-x-8 lg:flex'>
+           
               <li>
                 <NavLink
-                  to='/home'
-                  aria-label='Home'
-                  title='Home'
+                  to='/topics'
+                  aria-label='Topics'
+                  title='Topics'
                   className={({ isActive }) =>
                     isActive
                       ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                   }
                 >
-                  Home
+                  Topics
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to='/books'
-                  aria-label='Books'
-                  title='Books'
+                  to='/charts'
+                  aria-label='Charts'
+                  title='Charts'
                   className={({ isActive }) =>
                     isActive
                       ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                   }
                 >
-                  Books
+                  Charts
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to='/about'
-                  aria-label='About us'
-                  title='About us'
+                  to='/blog'
+                  aria-label='Blog'
+                  title='Blog'
                   className={({ isActive }) =>
                     isActive
                       ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                   }
                 >
-                  About us
+                  Blog
                 </NavLink>
               </li>
             </ul>
@@ -107,8 +108,8 @@ const Nav = () => {
                       <div>
                         <Link
                           to='/'
-                          aria-label='proReader'
-                          title='proReader'
+                          aria-label='iT_Quiz'
+                          title='iT_Quiz'
                           className='inline-flex items-center'
                         >
                           <svg
@@ -127,7 +128,7 @@ const Nav = () => {
                             <rect x='14' y='11' width='7' height='12' />
                           </svg>
                           <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                            proReader
+                            iT_Quiz
                           </span>
                         </Link>
                       </div>
@@ -152,31 +153,31 @@ const Nav = () => {
                         <li>
                           <Link
                             to='/'
-                            aria-label='Home'
-                            title='Home'
+                            aria-label='Topics'
+                            title='Topics'
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                           >
-                            Home
+                            Topics
                           </Link>
                         </li>
                         <li>
                           <Link
-                            to='/books'
-                            aria-label='Books'
-                            title='Books'
+                            to='/charts'
+                            aria-label='Charts'
+                            title='Charts'
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                           >
-                            Books
+                            Charts
                           </Link>
                         </li>
                         <li>
                           <Link
-                            to='/about'
-                            aria-label='About Us'
-                            title='About Us'
+                            to='/blog'
+                            aria-label='Blog'
+                            title='Blog'
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                           >
-                            About Us
+                            Blog
                           </Link>
                         </li>
                       </ul>
