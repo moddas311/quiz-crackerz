@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Nav from './components/Nav';
+
 import { RouterProvider } from 'react-router-dom';
 import router from './Routes';
 
