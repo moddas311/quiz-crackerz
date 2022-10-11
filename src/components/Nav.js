@@ -38,14 +38,14 @@ const Nav = () => {
            
               <li>
                 <NavLink
-                  to='/topics'
+                  to='/'
                   aria-label='Topics'
                   title='Topics'
                   className={({ isActive }) =>
-                    isActive
-                      ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                      : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                  }
+                  isActive
+                    ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                }
                 >
                   Topics
                 </NavLink>
@@ -56,10 +56,10 @@ const Nav = () => {
                   aria-label='Charts'
                   title='Charts'
                   className={({ isActive }) =>
-                    isActive
-                      ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                      : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                  }
+                  isActive
+                    ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                }
                 >
                   Charts
                 </NavLink>
@@ -152,7 +152,7 @@ const Nav = () => {
                       <ul className='space-y-4'>
                         <li>
                           <Link
-                            to='/topics'
+                            to='/'
                             aria-label='Topics'
                             title='Topics'
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'

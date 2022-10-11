@@ -1,15 +1,14 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { Area, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Charts = () => {
     const chartData = useLoaderData();
     const data = chartData.data;
-    // console.log(data);
 
     return (
-        <div className='mt-10 flex justify-between'>
-            <LineChart
+        <div className='flex justify-center mt-10'>
+           <LineChart
                 width={500}
                 height={400}
                 data={data}
