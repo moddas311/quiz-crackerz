@@ -1,6 +1,7 @@
 import Blog from "./components/Blog";
 import Charts from "./components/Charts";
 import Error from "./components/Error";
+import TopicQuiz from "./components/TopicQuiz";
 import Topics from "./components/Topics";
 
 
@@ -14,13 +15,13 @@ const router = createBrowserRouter([
         errorElement: <Error></Error>,
         children: [
             {
-                index: true,
+                path: '/',
                 element: <Topics />
             },
             {
                 path: 'topics',
                 element: <Topics />,
-                loader:  () => fetch('https://openapi.programming-hero.com/api/quiz'),
+                loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
             },
             {
                 path: 'charts',
@@ -28,8 +29,12 @@ const router = createBrowserRouter([
             },
             {
                 path: 'blog',
-                element:
-                    <Blog />
+                element: <Blog />
+            },
+            {
+                path: 'topic/:id',
+                element: <TopicQuiz />,
+                loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
             }
         ]
     }
