@@ -1,20 +1,24 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Quiz from './Quiz';
 
 const TopicQuiz = () => {
-
     const quizData = useLoaderData();
-    const data = quizData.data.questions.options;
-    console.log(data);
+    // const data =
+    console.log(quizData.data);
+    const { total, id, name, questions } = quizData.data;
     return (
         <div>
-            <p></p>
-            <div className= 'mt-10 grid grid-cols-2 gap-5'>
-            <input type="radio" name='option' />
-            <input type="radio" name='option' />
-            <input type="radio" name='option' />
-            <input type="radio" name='option' />   
-        </div>
+            <h2>Quiz of: {name}</h2>
+            <h4>Total Quiz: {total}</h4>
+            <div>
+                {
+                    questions.map(quiz => <Quiz
+                    key={quiz.id}
+                    quiz={quiz}
+                    ></Quiz>)
+                }
+            </div>
         </div>
     );
 };
