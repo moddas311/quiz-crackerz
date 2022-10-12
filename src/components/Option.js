@@ -1,24 +1,30 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Option = ({ option, correctAnswer }) => {
-    console.log(option);
+
+    const notify = () => toast.success("Wow so easy!", { position: "top-center" });
+
+    const warn = () => toast.error("Your Answer was wrong", { position: "top-center" });
 
     const quizHandleBtn = () => {
-
         console.log('clicked');
-        if (correctAnswer === option){
-            alert('Your answer is right!')
+        if (correctAnswer === option) {
+            notify()
         }
-        else{
-            alert ('you are wrong')
+        else {
+            warn()
         }
     }
     return (
-        <div>
-            <button onClick={() => quizHandleBtn(option)}>
-                {/* <input type="radio" /> */}
-                {option}
-            </button>
+        <div className='p-2 bg-white text-blue-500 rounded-md'>
+            <input
+                onClick={() => quizHandleBtn(option)} type="radio"
+                name="id"
+            />
+            {option}
+            <ToastContainer />
         </div>
     );
 };
