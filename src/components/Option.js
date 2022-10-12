@@ -2,8 +2,9 @@ import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const 
-Option = ({ option, correctAnswer }) => {
+
+const Option = ({ option, correctAnswer }) => {
+
     /* Toasts */
     const notify = () => toast.success("Wow so easy!", { position: "top-center" });
     const warn = () => toast.error("Your Answer was wrong", { position: "top-center" });
