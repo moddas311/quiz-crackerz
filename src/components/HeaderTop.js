@@ -2,7 +2,8 @@ import React from 'react';
 
 const HeaderTop = () => {
     return (
-        <div className="relative flex flex-col-reverse py-16 lg:py-0 lg:flex-col rounded-md lg:m-5">
+        <div className="relative flex flex-col-reverse py-16
+        lg:py-0 lg:flex-col rounded-md lg:m-10">
             <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
                 <div className="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
                     <h2 className="mb-5 font-sans text-3xl font-bold text-orange-500 tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:text-center">
@@ -11,7 +12,7 @@ const HeaderTop = () => {
                         If you're looking for do something.
                     </h2>
                     <p className="mb-5 text-base text-blue-800 md:text-lg md:text-center">
-                       You should participate our iT_Quiz and explore about your it related knowledge. we're did it for you full free. 
+                        You should participate our iT_Quiz and explore about your it related knowledge. we're did it for you full free.
                     </p>
                     <div className="flex flex-col items-center">
                         <div className="mb-2 text-1xl  text-green-800 md:mb-2">Follow us</div>
@@ -54,7 +55,7 @@ const HeaderTop = () => {
             </div>
             <div className="inset-y-0 top-0 right-0 w-full max-w-xl px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
                 <img
-                    className="object-cover w-full h-56 rounded shadow-lg  lg:rounded-none lg:shadow-none md:h-96 lg:h-full "
+                    className="object-cover w-full h-56 rounded shadow-lg  lg:rounded-md lg:shadow-none md:h-96 lg:h-full "
                     src="https://thumbs.dreamstime.com/b/quiz-bulb-lamp-energy-light-turquoise-background-idea-48157836.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                     alt=""
                 />
